@@ -1,0 +1,1 @@
+Otherwise empty folders are not copied

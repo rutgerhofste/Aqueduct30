@@ -1,0 +1,1 @@
+In this step, I convert the other rasters to Geotiff format with the sampleGeotiff and Python as method

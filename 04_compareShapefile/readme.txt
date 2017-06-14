@@ -1,0 +1,1 @@
+In this step I will create a csv file with the basic differences betwee the shapefiles. Output is pixels per GDBD basin, Size in km^2 and difference in size as % of original GDBD basin. 

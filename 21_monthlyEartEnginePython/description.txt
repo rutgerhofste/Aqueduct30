@@ -1,0 +1,11 @@
+This is where the magic happens. 
+
+In order to run the code: run all scripts in python using an ee anabled python 27 interpreter
+
+Codes: 
+
+Annual
+Monthly
+Area
+
+Next steps are combining the data using pandas

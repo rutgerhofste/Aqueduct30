@@ -1,0 +1,32 @@
+Version 2.1 of Aqueduct:
+
+We masked catchments with less than 0.012 m/m2 /year of withdrawal AND 0.03 m/m2 /year of available blue water as “arid and low water use
+
+source: http://www.wri.org/sites/default/files/Aqueduct_Global_Maps_2.1-Constructing_Decicion-Relevant_Global_Water_Risk_Indicators_final_0.pdf
+
+AQUEDUCT GLOBAL MAPS 2.1:
+CONSTRUCTING DECISION-RELEVANT GLOBAL
+WATER RISK INDICATORS
+
+01
+
+Dowloaded Koppen climate data for cross referencing:
+http://koeppen-geiger.vu-wien.ac.at/shifts.htm 
+
+Observed 1976-200 
+http://koeppen-geiger.vu-wien.ac.at/data/1976-2000_GIS.zip
+
+Downloaded arc 2 SLD tool to convert .lyr to .sld
+http://wald.intevation.org/frs/?group_id=32&release_id=892#arcmap2sld-_1.4.0-title-content
+
+
+Rasterize shapefile with gdal_rasterize
+
+gdal_rasterize -a GRIDCODE -ot Integer64 -of GTiff -te -180 -90 180 90 -ts 720 360 -co COMPRESS=DEFLATE -co PREDICTOR=1 -co ZLEVEL=6 -l 1976-2000 -a_nodata -9999 1976-2000_GIS\1976-2000.shp C:\Users\Rutger.Hofste\Desktop\werkmap\output\koppen1976-2000V01.tif
+
+02 
+reproject Aqueduct 2.1 to Eckert IV using ArGIS
+Calculate area using field calculator (m2)
+calculate fluxes for Withdrawal, Consumption and 
+
+
